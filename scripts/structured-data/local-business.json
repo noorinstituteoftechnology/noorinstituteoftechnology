@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "slogan": "The real value of a course is what happens after you complete it!",
+  "email": "noorinstituteoftechnology@gmail.com",
+  "keywords": "short-course, web-development, web-design, software, IT, learn, English, Coaching, Arts",
+  "smokingAllowed": false,
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "name": "Noor Institute Of Technology",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Near Rajput Milk Corner, Burns Road",
+    "addressLocality": "Karachi",
+    "addressRegion": "Sindh",
+    "postalCode": "74200",
+    "addressCountry": "PK"
+  },
+  "url": "noorinstituteoftechnology.github.io",
+  "telephone": "+923322655937",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "21:00"
+    }
+  ]
+}

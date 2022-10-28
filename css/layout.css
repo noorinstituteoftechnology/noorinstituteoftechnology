@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Marker';
+    src: url('../assets/PermanentMarker-Regular.ttf') format('truetype');
+}
+
+* {margin:0px;padding:0px;}
+header {background-image:url("file:///home/ray/repositories/NoorInstituteOfTechnology/noorinstituteoftechnology.github.io/assets/Pictures/headerBG.jpg");background-size:cover;height:100vh;width:100vw;color:white;display:flex;flex-flow:column nowrap;position:fixed;top:0px;left:0px;justify-content:space-between;align-items:center;}
+#topToolBar {height:1.5vh;padding:10px;display:flex;flex-flow:row nowrap;justify-content:space-between;width:98vw;}
+#topToolBar > a {font-size:1.5vh;}
+header > h1 {font-size:3rem;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;font-style:oblique 10deg;}
+header > h2 {font-size:2rem;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;font-style:oblique 10deg;color:yellow;transform:rotate(-10deg);}
+#newsStrips {margin-bottom:20vh;}
+#newsStrips > marquee {font-size:3vh;margin-top:10px;}
+#news {background-color:#df1919;}
+#courseNews {background-color:#efdf19;color:#191919;}
+
+main {background-image:url("file:///home/ray/repositories/NoorInstituteOfTechnology/noorinstituteoftechnology.github.io/assets/mainBG.svg");background-size:cover;height:800vh;color:white;display:flex;flex-flow:column nowrap;position:relative;top:60vh;align-items:center;}
+main > h1 {margin:50vh;font-size:1.8rem;white-space:nowrap;}
+
+footer {background-image:url("file:///home/ray/repositories/NoorInstituteOfTechnology/noorinstituteoftechnology.github.io/assets/footerBG.svg");background-size:cover;height:80vh;color:white;display:flex;flex-flow:row nowrap;position:relative;top:25vh;justify-content:space-around;color:#dfdfdf;}
+footer > * {margin-top:50vh;}
+
