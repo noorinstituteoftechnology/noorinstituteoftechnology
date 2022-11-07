@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Learning System | Noor Institute of Technology: NoorTech </title>
+	<meta name="description" content="Sign-In page"/>
+	<meta name="robots" content="noindex">
+	<meta name="copyright" content="&copy; 2022 S M Mohtashim Ahmed" />
+	<link rel="stylesheet" type="text/css" href="../css/userprofile.css">
+	<script src="../scripts/crypto-js.min.js"></script>
+	<script src="../scripts/courseList.js"></script>
+</head>
+<body>
+	<nav>
+		<div id="logo">
+			<img src="../assets/laptop-code.svg"/>
+			<h1>NoorTech</h1>
+		</div>
+		<div id="contactInstitute">
+			<select name="courseName" id="courseName">
+				<option value="none">Course Name</option>
+				<option value="frontEnd">Front-End</option>
+				<option value="backEnd">Back-End</option>
+				<option value="englishTraining">English Training</option>
+				<option value="englishTeaching">English Teaching</option>
+				<option value="business">Business</option>
+				<option value="digitalMarketing">Digital Marketing</option>
+				<option value="sEO">SEO</option>
+				<option value="eCommerce">E-Commerce</option>
+			</select>
+		</div>
+		<div id="usefulLinks">
+			<a href="https://codepen.io/pen/" target="_blank" id="pen"><img src="../assets/pen.svg"/></a>
+			<a href="#" id="linkList"><img src="../assets/link.svg"/></a>
+			<a href="#" id="logOut"><img src="../assets/door-open.svg"/></a>
+		</div>
+	</nav>
+	<main>
+		<article>
+			<section id="imageSec"></section>
+			<section id="descpSec">
+				<section id="courseInfo">
+				</section>
+				<p id="mainDes">On this page you can Log-in and check-out any quizes in your Course, use the built-in Code Editor. You need a <b>User Name</b>, <b>Student ID</b>, and <b>Course Key</b> to Log-in. Your <b>Instructor</b> will provide you all these details.</p>
+				<section id="loginForm">
+					<div><label for="studentID">Student ID: </label><input type="text" name="studentID" id="studentID"></div>
+					<!--<div><label for="password">Password: </label><input type="password" name="password" id="password"></div>-->
+					<div><label for="courseKey">Course Key: </label><input type="text" name="courseKey" id="courseKey"></div>
+					<button id="login">Login</button>
+					<div id="usefulLinksUnderBar">
+						<a id="editorMini" href="#"><img src="../assets/pen.svg"/></a>
+						<a id="impLinks" href="#"><img src="../assets/link.svg"/></a>
+						<a id="signOutMini" href="#"><img src="../assets/door-open.svg"/></a>
+					</div>
+				</section>
+			</section>
+			<section id="titleSec"><h1 id="titleData">Quizzes</h1></section>
+			<section id="navSec">
+				<div xmlns:dc="http://purl.org/dc/elements/1.1/">
+					<p id="copyright" property="dc:rights">&copy;
+						<span property="dc:dateCopyrighted">2022</span>
+						<span property="dc:creator">S M Mohtashim Ahmed</span>
+					</p>
+				</div>
+			</section>
+		</article>
+	</main>
+	<script src="../scripts/userprofile.js"></script>
+	</body>
+</html>
