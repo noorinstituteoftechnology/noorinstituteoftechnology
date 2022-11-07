@@ -29,7 +29,7 @@ main > article {
 	grid-template-rows:2fr 1fr;
 }
 main > article > section {height:100%;border:1px solid var(--bod);}
-#imageSec {background-image:url("file:///home/ray/repositories/NoorInstituteOfTechnology/noorinstituteoftechnology.github.io/assets/Pictures/museums-victoria-n1LIveUPls4-unsplash.jpg");background-size:cover;}
+#imageSec {background-image:url("noorinstituteoftechnology.github.io/assets/Pictures/museums-victoria-n1LIveUPls4-unsplash.jpg");background-size:cover;}
 #titleSec > h1 {font-size:4rem;margin-left:5vw;}
 #courseName {font-size:1rem;background-color:var(--bg);border:none;}
 #descpSec > p, #loginForm > label {text-indent:5vw;margin:10px;font-family:arial, serif;}
@@ -76,7 +76,6 @@ button:hover, select:hover {filter:hue-rotate(90deg);}
 @media (max-width: 440px) {
 	#logo {visibility:hidden;position:absolute;}
 	#loginForm > div {display:flex;flex-flow:column nowrap;}
-	/*#usefulLinksUnderBar, #mDNLink, #googleLink {visibility:hidden;position:absolute;}*/
 	#usefulLinksUnderBar, #linkList, #logOut {visibility:hidden;position:absolute;}
 	#usefulLinks {visibility:visible;position:static;}
 
