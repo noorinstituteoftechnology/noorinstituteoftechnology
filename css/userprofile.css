@@ -85,4 +85,8 @@ button:hover, select:hover {filter:hue-rotate(90deg);}
 #descpSec > ul {list-style:none;}
 #descpSec > ul > li {font-style:none;}
 #descpSec > ul > li > b {color:yellow;}
-#descpSec > ul > li > img::before { content: "\A"; white-space: pre; }
+#descpSec > * > img::before { content: "\A"; white-space: pre; max-width:100%;}
+#descpSec > * > * > img::before { content: "\A"; white-space: pre; max-width:100%;}
+#descpSec > * > * >  * > img::before { content: "\A"; white-space: pre; max-width:100%;}
+
+
