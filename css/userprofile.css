@@ -83,5 +83,5 @@ button:hover, select:hover {filter:hue-rotate(90deg);}
 
 .quizBox {height:40%; width:100%;}
 #descpSec > ul {list-style:none;}
-
-
+#descpSec > ul > li {font-style:none;}
+#descpSec > ul > li > b {color:yellow;}
