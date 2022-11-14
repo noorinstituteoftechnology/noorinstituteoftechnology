@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UltraEditor | NoorTech</title>
+	<style>
+		* {margin:0px;padding:0px;}
+		body {display:flex;flex-flow:column nowrap;height:98vh;width:98vw;margin:1vh 1vw;background-color:#191919;}
+		header {flex:0 0 auto;font-style:oblique;font-size:22px;color:white;}
+		main {flex:1 0 auto;display:flex;flex-flow:column nowrap;justify-content:space-between;}
+		footer {flex:0 0 auto;color:white;}
+		.horizontal-nav {display:flex;flex-flow:row nowrap;width:98vw;justify-content:flex-end;}
+		.editor-boxes {flex:1 0 auto;display:flex;flex-flow:row nowrap;}
+		.editor-boxes > * {height:100%;flex:1 0 auto;}
+		.editor {color:white;border:1px solid #dfdfdf;font-size:16px;}
+		.display {padding:0px 20px;background-color:#fff;border:1px solid #dfdfdf;margin:auto;padding:auto;}
+		
+		main > nav {flex:0 0 auto;}
+		button {font-size:22px;margin: 2px 5px;color:white;border:none;border-radius:5px;padding:2px 5px;}
+		button:hover {filter:hue-rotate(45deg);}
+		.save {background-color:#5969ff;}
+		.run {background-color:#19af19;}
+		@media (orientation:portrait) {
+			.editor-boxes {flex-flow:column nowrap;}
+			.editor-boxes > * {width:100%;height:auto;}
+		}
+	</style>
+</head>
+<body>
+	<header>UltraEditor</header>
+	<main>
+		<section class="editor-boxes">
+			<article contenteditable class="editor" id="mainEditor"></article>
+			<div class="display" id="mainDisplay"></div>
+		</section>
+		<nav class="horizontal-nav">
+			<button onclick="save();" class="save">Save</button>
+			<button onclick="run();" class="run">Run</button>
+		</nav>
+	</main>
+	<footer>
+		&copy; 2022 S M Mohtashim Ahmed
+	</footer>
+	<script defer>
+		document.getElementById("mainEditor").innerHTML = localStorage.getItem("editorBody");
+		function save() {localStorage.setItem("editorBody", document.getElementById("mainEditor").innerHTML);}
+		function run() {document.getElementById("mainDisplay").innerHTML = document.getElementById("mainEditor").textContent;}
+	</script>
+</body>
+</html>
