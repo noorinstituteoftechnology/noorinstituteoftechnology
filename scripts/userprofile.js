@@ -84,6 +84,7 @@ function addContentToButtons(courseName, courseKey) {
 			const lessonName = event.target.innerHTML.split(" #").join("").toLowerCase();
 			if (!(lessonName.includes("quiz"))) document.getElementById("descpSec").innerHTML =  decryptData(courseList[courseName][lessonName], courseKey);
 			else document.getElementById("descpSec").innerHTML =  courseList[courseName][lessonName];
+			renderSource();
 		});
 	});
 }
