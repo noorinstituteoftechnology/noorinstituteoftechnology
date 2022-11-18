@@ -8,8 +8,17 @@
 	<meta name="robots" content="noindex">
 	<meta name="copyright" content="&copy; 2022 S M Mohtashim Ahmed" />
 	<link rel="stylesheet" type="text/css" href="../css/userprofile.css">
+	<link rel="stylesheet" href="../css/highlightjs/dracula.css">
 	<script src="../scripts/crypto-js.min.js"></script>
 	<script src="../scripts/courseList.js"></script>
+	<script src="../css/highlightjs/highlight.min.js"></script>
+	<script>
+		function renderSource() {
+			Array.from(document.getElementsByTagName("code")).forEach(code => {
+				hljs.highlightBlock(code);
+			})
+		}
+	</script>
 </head>
 <body>
 	<nav>
