@@ -115,3 +115,22 @@ color: #333333;
 white-space: pre;
 white-space: pre-wrap;
 }
+
+.over-box > ol, .over-box > ul {margin-left:50px;}
+.over-box > p {text-indent:50px;}
+.over-box > * {font-family:serif;}
+.over-box > * > * {font-family:serif;}
+.over-box > * > * > * {font-family:serif;}
+.over-box > * > * > * > * {font-family:serif;}
+.over-box > * > b {color:yellow;}
+.over-box > * > * > b {color:yellow;}
+.over-box > * > * {font-style:normal;font-weight:normal;}
+pre > code {font-family:monospace;font-size:16px;margin:0px;}
+pre > code > * {font-family:monospace;font-size:16px;}
+pre > code > * > * {font-family:monospace;font-size:16px;}
+pre > code > * > * > * {font-family:monospace;font-size:16px;}
+.over-box > pre {background-color:#191919;color:#dfdfdf;padding:2px;}
+.over-box > * > pre {background-color:#191919;color:#dfdfdf;padding:2px;}
+.over-box > * > * > pre {background-color:#191919;color:#dfdfdf;padding:2px;}
+.over-box > * > * > * > pre {background-color:#191919;color:#dfdfdf;padding:2px;}
+.over-box > ul > li {font-style:normal;font-weight:normal;}
