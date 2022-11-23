@@ -6,7 +6,7 @@
 	<style>
 		* {margin:0px;padding:0px;}
 		body {display:flex;flex-flow:column nowrap;height:98vh;width:98vw;margin:1vh 1vw;background-color:#191919;}
-		header {flex:0 0 auto;font-style:oblique;font-size:22px;color:white;}
+		header {flex:0 0 auto;font-style:oblique;font-size:22px;color:white;display:flex;flex-flow:row nowrap;justify-content:space-between;}
 		main {flex:1 0 auto;display:flex;flex-flow:column nowrap;justify-content:space-between;}
 		footer {flex:0 0 auto;color:white;}
 		.horizontal-nav {display:flex;flex-flow:row nowrap;width:98vw;justify-content:flex-end;}
@@ -20,6 +20,10 @@
 		button:hover {filter:hue-rotate(45deg);}
 		.save {background-color:#5969ff;}
 		.run {background-color:#19af19;}
+		header > nav > button {background-color:#191919;}
+		header > nav > button > img {height:35px;padding:2px;}
+		header > nav > button:hover {background-color: #595959;}
+		
 		@media (orientation:portrait) {
 			.editor {font-size:2.5rem;}
 			.editor-boxes {flex-flow:column nowrap;}
@@ -28,7 +32,12 @@
 	</style>
 </head>
 <body>
-	<header>UltraEditor</header>
+	<header>
+		<h1>UltraEditor</h1>
+		<nav>
+			<button onclick="showImageCollection();"><img src="../assets/images.svg" alt="click on this to get a list of images"/></button>
+		</nav>
+	</header>
 	<main>
 		<section class="editor-boxes">
 			<article contenteditable class="editor" id="mainEditor"></article>
