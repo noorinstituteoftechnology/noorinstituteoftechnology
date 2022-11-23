@@ -24,6 +24,21 @@
 		header > nav > button > img {height:35px;padding:2px;}
 		header > nav > button:hover {background-color: #595959;}
 		
+		#imgColl {min-width:20vw;height:99vh;position:absolute;right:0px;top:0px;border:1px solid #dfdfdf;background-color:#191919;display:flex;flex-flow:column nowrap;}
+		.hidden {transform:scale(0)rotate(45deg);transition:transform 2s;}
+		.shown {transform:scale(1)rotate(0deg);transition:transform 2s;}
+
+		#imgColl > nav {flex:0 0 auto;border:1px solid white;}
+		.window-ops > button {float:right;}
+		.window-ops > input {margin-top:2px;height:80%;width:20vw;}
+		.close-btn {background-color:red;}
+		.add-btn {background-color:#19dfdf;}
+		#imgColl {overflow-y:scroll;min-width:20vw;height:99vh;position:absolute;right:0px;top:0px;z-index:3000;border:1px solid #dfdfdf;background-color:#191919;}
+		.image-list > li {display:flex;flex-flow:column nowrap;} 
+		.image-list > li > button {background-color:#191919;border:1px solid #dfdfdf;}
+		.image-list > li > button:hover {background-color:#dfdfdf;cursor:pointer;}
+		.image-list > li > img {width:40vw;margin:5px;border:5px dashed #dfdfdf;}
+
 		@media (orientation:portrait) {
 			.editor {font-size:2.5rem;}
 			.editor-boxes {flex-flow:column nowrap;}
@@ -48,13 +63,39 @@
 			<button onclick="run();" class="run">Run</button>
 		</nav>
 	</main>
+	<aside id="imgColl" class="shown">
+		<nav class="window-ops">
+			<button class="close-btn" onclick="hideImageCollection();">X</button>
+		</nav>
+		<ul class="image-list">
+			<li><img src="../assets/320px-Coney_Island_beach_and_amusement_parks_(June_2016).jpg"/><button></button></li>
+			<li><img src="../assets/Pictures/christopher-gower-m_HRfLhgABo-unsplash.jpg"/><button></button></li>
+			<li><img src="../assets/Pictures/luca-bravo-XJXWbfSo2f0-unsplash.jpg"/><button></button></li>
+			<li><img src="../assets/Pictures/marilia-castelli-CjdQN-oYdjc-unsplash.jpg"/><button></button></li>
+		</ul>
+	</aside>
 	<footer>
 		&copy; 2022 S M Mohtashim Ahmed
 	</footer>
 	<script defer>
+		Array.from(document.querySelectorAll(".image-list>li>button")).forEach(node => {
+			node.innerHTML = "Copy Image Link";
+			node.addEventListener('click', copyImageURL);
+		});
 		document.getElementById("mainEditor").innerHTML = localStorage.getItem("editorBody");
 		function save() {localStorage.setItem("editorBody", document.getElementById("mainEditor").innerHTML);}
 		function run() {document.getElementById("mainDisplay").innerHTML = document.getElementById("mainEditor").textContent;}
+		function hideImageCollection() {
+			document.getElementById("imgColl").classList.remove("shown");
+			document.getElementById("imgColl").classList.add("hidden");
+			}
+		function showImageCollection() {
+			document.getElementById("imgColl").classList.remove("hidden");
+			document.getElementById("imgColl").classList.add("shown");
+			}
+		function copyImageURL() {
+			navigator.clipboard.writeText(event.target.parentNode.children[0].src);
+		}
 	</script>
 </body>
 </html>
