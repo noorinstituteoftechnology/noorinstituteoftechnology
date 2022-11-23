@@ -11,9 +11,9 @@
 		footer {flex:0 0 auto;color:white;}
 		.horizontal-nav {display:flex;flex-flow:row nowrap;width:98vw;justify-content:flex-end;}
 		.editor-boxes {flex:1 0 auto;display:flex;flex-flow:row nowrap;}
-		.editor-boxes > * {height:100%;flex:1 0 auto;}
-		.editor {color:white;border:1px solid #dfdfdf;font-size:16px;max-width:60vw;}
-		.display {padding:0px 20px;background-color:#fff;border:1px solid #dfdfdf;margin:auto;padding:auto;max-width:60vw;}
+		.editor-boxes > * {height:100%;flex:50%;}
+		.editor {color:white;border:1px solid #dfdfdf;font-size:1rem;text-overflow:clip;overflow-y:scroll;padding:10px;overflow-wrap:break-word;}
+		.display {padding:0px 20px;background-color:#fff;border:1px solid #dfdfdf;margin:auto;padding:auto;}
 		
 		main > nav {flex:0 0 auto;}
 		button {font-size:22px;margin: 2px 5px;color:white;border:none;border-radius:5px;padding:2px 5px;}
@@ -21,6 +21,7 @@
 		.save {background-color:#5969ff;}
 		.run {background-color:#19af19;}
 		@media (orientation:portrait) {
+			.editor {font-size:2.5rem;}
 			.editor-boxes {flex-flow:column nowrap;}
 			.editor-boxes > * {width:100%;height:auto;}
 		}
