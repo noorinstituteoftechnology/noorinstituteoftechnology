@@ -53,6 +53,7 @@
 	<header>
 		<h1>UltraEditor</h1>
 		<nav>
+			<button onclick="downloadFile();"><img src="../assets/resources/download.svg" alt="click on this to download your code as a file"/></button>
 			<button onclick="showImageCollection();"><img src="../assets/images.svg" alt="click on this to get a list of images"/></button>
 		</nav>
 	</header>
@@ -98,6 +99,19 @@
 			}
 		function copyImageURL() {
 			navigator.clipboard.writeText(event.target.parentNode.children[0].src);
+		}
+		function downloadFile() {
+			const filename = prompt("Enter a File Name.");
+			download(filename, document.getElementById("mainEditor").textContent);
+		  	const display = document.getElementById("mainDisplay");
+		  	display.innerHTML = "Your file was downloaded with the Name "+filename+ "Check your Downloads folder.";
+			setTimeout(()=>{display.innerHTML = ""}, 5000);
+		}
+		function download(filename, text) {
+		  const element = document.createElement('a');
+		  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+		  element.setAttribute('download', filename);
+		  element.click();
 		}
 	</script>
 </body>
