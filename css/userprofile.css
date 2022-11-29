@@ -10,7 +10,13 @@
 
 *  {box-sizing:border-box;margin:0px;padding:0px;font-family:'Marker';font-weight:400;color:var(--font-color);}
 body {display:flex;flex-flow:column nowrap;overflow:hidden;background-color:var(--bg);height:100vh;}
-#descpSec {height:60vh;overflow:scroll;}
+#descpSec {height:60vh;overflow:scroll;padding-left:25px;}
+#descpSec > span {font-family:serif;}
+#descpSec > * > span {font-family:serif;}
+#descpSec > * > * > span {font-family:serif;}
+#descpSec > * > * > * > span {font-family:serif;}
+#descpSec > * > * > * > * > span {font-family:serif;}
+#descpSec > * > * > * > * > * > span {font-family:serif;}
 .lesson {padding:10px;}
 .lesson > h1 {font-size:2em;}
 .lesson > p > a {font-family:serif;}
