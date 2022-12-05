@@ -26,5 +26,6 @@ const courseList = {
 		quiz4: `<h1>Quiz #4</h1><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczhwmY0zzOVXY3eTCcDhYELzvQSCqrA1YmQgQbU6q-PVtZiQ/viewform?embedded=true" width="500" height="3249" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>`,
 		quiz5: `<h1>Quiz #5 - Part 1 and Part 2</h1><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrddRUbVlTKD_WJjbRDaBQ9ezEA2nh8HCqrmmld8DVlNrxHw/viewform?embedded=true" width="500" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>`,
 		quiz6: `<h1>Quiz #6 - Introducing Links and Tables</h1><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdA0K5f3nV1oVYyurm0aAjwK_WdO280EL8JA6iWd18pOY9dAQ/viewform?embedded=true" width="500" height="382" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>`,
+		quiz7: `<h1>Quiz #7 - Introducting CSS Objects</h1><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScIvtjVvzOOTrww8s3BE61EgkBPYGiH6jf7HB2EuhYATcCPFg/viewform?embedded=true" width="500" height="1355" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>`,
 		}
 }
