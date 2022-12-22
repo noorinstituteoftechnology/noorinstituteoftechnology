@@ -1,0 +1,21 @@
+
+.darken {
+	filter:brightness(100%);
+	transition: filter 2s;
+}
+
+.shade {
+	filter:brightness(100%);
+	transition: filter 2s;
+}
+
+.invert {
+	filter:invert(100%);	
+	transition: filter 2s;
+}
+
+.darkmode-footer {
+	background-color:var(--gold);
+}
+
+

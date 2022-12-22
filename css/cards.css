@@ -1,0 +1,88 @@
+.card {
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:center;
+	align-items:stretch;
+}
+
+.card > .title {
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:center;
+	align-items:flex-end;
+
+}
+
+.card > * {
+	margin:0px 25px;
+}
+
+.card > div > * {
+	padding:0px;
+	margin:5px;
+}
+
+.card > div > .icon {
+	width:100px;
+
+}
+
+.card > .title > .course > * {
+	padding:0px;
+	margin:0px;
+}
+
+
+
+.card > .title > .course > h1 {
+	font-size:14pt;
+	color:#191919;
+}
+
+.card > .title > .course > h2 {
+	font-size:12pt;
+	color:#292929;
+}
+
+hr {
+	color:#efefef;
+}
+
+.card > p {
+	margin:22px;
+	text-indent:25px;
+	font-family:sans;
+	font-size:10pt;
+	color:#292929;
+}
+
+.card > .outline-item {
+	display:flex;
+	flex-flow:row nowrap;
+	align-items:center;
+}
+
+.card > .outline-item > span {
+	font-weight:bold;
+	font-family:sans;
+	font-size:10pt;
+	color:#292929;
+} 
+
+.card > .outline-item > img {
+	width:25px;
+} 
+
+.card > button {
+	color:white;
+	font-weight:bold;
+	padding:10px 0px;
+} 
+
+.card > button:hover {
+	opacity:0.5;
+	cursor:pointer;
+}
+
+
+

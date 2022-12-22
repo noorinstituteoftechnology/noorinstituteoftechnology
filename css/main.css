@@ -1,0 +1,79 @@
+main {
+	width:100vw;
+	min-height:150vh;
+	background-color:var(--main-color);
+	transition:background-color 2s;
+	margin:0px;
+	padding:0px;
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:center;
+	align-items:stretch;
+}
+
+main > section {
+	padding:100px 120px;
+}
+
+
+main > section > article {flex:0 1 500px;max-width:750px;min-width:350px;}
+main > section > article > h1 {font-size:22pt;color:#393939;width:80%;}
+main > section > article > h1 > b {color:var(--purple);}
+main > section > article > p {font-size:12pt;color:#414141;font-family:sans serif;text-indent:50px;}
+
+#banner {background-color:#e9e9ff;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;}
+#banner > img {
+	flex:0 1 500px;
+	min-width:350px;
+	background-color:white;
+	border-radius:10px;
+	padding:10px;
+}
+
+#productsCollection {background-color:#dfdfef;display:flex;flex-flow:column nowrap;justify-content:center;align-items:center;}
+#productsCollection > article {display:flex;flex-flow:column nowrap;justify-content:center;align-items:center;}
+#productsCollection > article > h1 {text-align:center;}
+
+.cards {display:flex;flex-flow:row wrap;justify-content:center;align-items:center;gap:30px;width:80vw;}
+.card {background-color:white;flex:0 1 350px;min-width:320px;height:525px;border-radius:10px;}
+.card:hover {transform:scale(1.02);}
+
+#contactUs {
+	min-height:300px;
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:center;
+	align-items:center;
+	background-size:cover;
+}
+
+.contactUs-light-bg {
+	background-image:url("file:///home/ray/repositories/NoorInstituteOfTechnology/noorinstituteoftechnology.github.io%20(backfire-clone)/assets/circle-scatter-haikei.svg");
+}
+
+.contactUs-dark-bg {
+	color:white;
+	background-image:url("file:///home/ray/repositories/NoorInstituteOfTechnology/noorinstituteoftechnology.github.io%20(backfire-clone)/assets/circle-scatter-haikei-gold.svg");
+}
+
+.contactUs-dark-bg > div > img {
+	filter:invert(100%);
+}
+
+
+
+#contactUs > div {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	align-items:center;
+}
+
+#contactUs > div > img {
+	width:50px;
+}
+
+#contactUs > div > span {
+	font-size:32pt;
+}
+
