@@ -1,9 +1,0 @@
-@media (max-width: 830px) {
-	.flyerGallery > * {flex:1 0 50%;max-height:18vh;}
-	.textSlideshow {background-image:url('file:///home/ray/repositories/NoorInstituteOfTechnology/noorinstituteoftechnology.github.io/assets/Pictures/paul-calescu-KW3m50XRhjk-unsplash.jpg');}
-	header {background-image:url("file:///home/ray/repositories/NoorInstituteOfTechnology/noorinstituteoftechnology.github.io/assets/Pictures/alexandre-debieve-DOu3JJ3eLQc-unsplash.jpg");}
-	header > h1 {white-space:normal;}
-	#introList > li > details > p {font-size:0.8rem;}
-	#introList > li > details[open], #introList > li > details[open] {font-size:1.1em;}
-}
-

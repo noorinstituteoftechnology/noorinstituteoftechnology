@@ -2,107 +2,249 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Noor Institute of Technology: NoorTech </title>
-	<meta name="description" content="Learn IT, Technology, Business, and Arts skills. Become highly employable and ready to start your own business! We have 6-month Short-Courses and long courses for up to 2 years in Software, IT, Business, English, Education, Arts, etc. We ensure employement and business opportunities for our top students!"/>
-	<script type="application/ld+json" src="scripts/structured-data/local-business.json"></script>
-	<link rel="stylesheet" type="text/css" href="css/layout.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<title>NoorTech | Noor Institute of Technology</title>
+	<!-- mind the order of stylesheets -->
+	<link rel="stylesheet" href="css/root.css">
+	<link rel="stylesheet" href="css/topNav.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/darkMode.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/buttons.css">
+	<link rel="stylesheet" href="css/cards.css">
+	<link rel="stylesheet" href="css/dropdown.css">
+	<link rel="stylesheet" href="css/mediaQueries.css">
+	<script src="index.js"></script>
 </head>
 <body>
+	<nav id="topNav">
+		<div class="left">
+			<!--
+			<span id="lang">
+				<img src="assets/language.svg"/>
+				<span>English</span>
+				<img src="assets/chevron-down.svg"/>
+			</span>
+			<nav id="langDropdown" class="dropdown">
+				<span class="point"></span>
+				<a href="#">English</a>
+				<a href="#">Urdu (Coming Soon)</a>
+				<a href="#">Spanish (Coming Soon)</a>
+				<a href="#">French (Coming Soon)</a>
+				<a href="#">Japanese (Coming Soon)</a>
+				<a href="#">Chinese (Coming Soon)</a>
+				<a href="#">Korean (Coming Soon)</a>
+			</nav>
+			-->
+			<span id="darkMode" onclick="toggle('#darkMode', 'assets/toggle-on.svg', 'assets/toggle-off.svg');">
+				<img src="assets/toggle-off.svg"/>
+				<span>Dark Mode</span>
+			</span>
+			<span>
+				<img src="assets/user-circle.svg"/>
+				<span onclick="window.location=window.location.pathname+'#contactUs'">Contact Us</span>
+			</span>
+			<!--
+		</div>
+		<div class="right">
+			-->
+			<!--
+			<span id="info">
+				<span>Info</span>
+				<img src="assets/chevron-down.svg"/>
+			</span>
+			<nav id="infoDropdown" class="dropdown">
+				<span class="point"></span>
+				<a href="#">About Us</a>
+				<a href="#">Join Us</a>
+				<a href="#">Contact Us</a>
+				<a href="#">Hire Us</a>
+				<a href="#">Our Resumes</a>
+			</nav>
+			-->
+			<span>
+				<img class="big" src="assets/online-education-7546.svg"/>
+				<span>Student Corner</span>
+			</span>
+			<!--
+			<span>
+				<img src="assets/search.svg"/>
+			</span>
+			-->
+		</div>
+	</nav>
 	<header>
-		<section id="topToolBar">
-			<a id="blog" rel="canonical"><img src="assets/blog.svg" alt"signInIcon"/>Blog</a>
-			<a id="signIn" rel="nofollow" href="apps/userprofile.html"><img src="assets/user-alt.svg" alt"signInIcon"/>Sign In</a>
-		</section>
-		<h1>NoorTech</h1>
-		<h2>Our Website is Under Development</h2>
-		<section id="newsStrips">
-			<!--<marquee id="news">Admissions Open! Contact us at our Whatsapp 03322655937</marquee>
-			<marquee id="courseNews">Learn Web-Development in 6 months. Learn Full-Stack Software Engineering in 24 months. Learn English with us via our 6 month English Course.</marquee>-->
-		</section>
+		<div class="left">
+			<span id="headerStudentCorner">
+				<img class="big" src="assets/online-education-7546.svg"/>
+				<span>Student Corner</span>
+			</span>
+			<span id="webLogo">
+				<img id="logo" src="logo.svg"/>
+			</span>
+			<span id="headerCourses">
+				<span onclick="window.location=window.location.pathname+'#products'">Courses</span>
+			</span>
+			<span id="headerResources">
+				<span>Resources</span>
+				<img src="assets/chevron-down.svg"/>
+			</span>
+			<nav id="resourcesDropdown" class="dropdown">
+				<span class="point"></span>
+				<b>External Resources</b>
+				<a href="https://www.youtube.com/channel/UCleBSFSpanTiQgP8IYMEb0g" target="_blank">NoorTech YouTube Channel</a>
+				<a href="https://html5sec.org/" target="_blank">HTML5 Security</a>
+				<hr>
+				<b>Comming Soon</b>
+				<a href="#">Institute News</a>
+				<a href="#">Our Instructors</a>
+				<a href="#">Merit Based Finincial Asistance</a>
+			</nav>
+		</div>
+		<div class="right">
+			<button class="outline-button" onclick="window.open('https://www.youtube.com/channel/UCleBSFSpanTiQgP8IYMEb0g')">Online</button>
+			<button class="color-button" onclick="window.open('https://forms.gle/jb9kFSUnm1bnzNwL6')">Join Now</button>
+		</div>
 	</header>
 	<main>
-		<section id="introSection">
-			<h1>Welcome to NoorTech</h1>
-			<h2>We Teach what others Don't</h2>
-			<hr class="red-vert-bar">
-			<ul id="introList">
-				<li id="firstIntro"><details open><summary><b>Learn</b> and <b>Master</b> Complete Skills</summary><p>While <b>other technology institutes</b> leave you hanging with <b>half-learned skills</b>, <b>we focus on</b> complete <b>mastery</b> of a skill. We provide <b class="green">excellent instruction</b> and guidance <b>every step of the way</b>. In <b>our courses</b> you will be guided through <b>advanced drills and methods</b> to <b>Master</b> each aspect of the skill.</p></li>
-				<li><details><summary>Focus on <b>High Earning</b> skills</summary><p>We carefully select the skills and course material we teach, keeping in mind <b>demand of skills</b> in the current market. We <b>prepare you</b> to <b class="blue">start your own Businesses</b> and/or <b>become a Feelancer</b> and work form Home.</p></li>
-				<li><details><summary>Get <b>Top Class</b> Education</summary><p>We use <b>Advance Education Theory</b> and <b>Psychology</b> to develop <b>easy-to-digest</b> lessons that <b class="green-90">Ensures the best Education</b> both in-house and online.</p></li>
-				<li><details><summary>Develop your <b>Portfolio</b></summary><p>Our courses end with an <b>Intensive Projects Module</b>. Each Project is used to develop <b>Your Portfolio</b>, which allows you to <b class="blue">Get jobs and market your work</b>. Your Portfolio is also visible on our <b>Gallery of Student Portfolios</b>.</p></li>
-				<li><details><summary>Hit the Ground Running</summary><p>During the course of your studies <b>we will teach and asist you</b> in the development of <b class="cyan">Your own Business or Freelance Presence</b>. We will help our students  get their first client by providing asistance and guidance. We ensure help until our students can do the work by themselves!</p></li>
-			</ul>
-			<hr>
+		<section id="banner">
+			<article>
+				<h1>World's Greatest Online Education System</h1>
+				<p>We have students living in high-speed internet hubs like Germany and we have students living in slow-speed internet areas like rural Pakistan. We have managed to provide high quality training to all of the students regardless of demographs, backgrounds, location, education, culture, language, access-to-technology, etc. While capitalizing on the assets they have at their disposal!</p>
+				<nav>
+					<button class="butt color-button" onclick="window.open('https://forms.gle/jb9kFSUnm1bnzNwL6')">Join Now</button>
+					<button class="butt outline-button" onclick="window.open('https://www.youtube.com/channel/UCleBSFSpanTiQgP8IYMEb0g')">Online</button>
+				</nav>
+				<p>You will recieve top quality training through the medium of your choice. We teach students over Private Blogs, members only YouTube channel, our own Online Learning System, Whatsapp, Facebook, Direct Mail, On-campus, at-home, and any other medium of your choice.</p>
+			</article>
+			<img id="bannarImage" src="assets/thisisengineering-raeng-yhCHx8Mc-Kc-unsplash.jpg"/>
 		</section>
-		<section>
-			<hr>
-			<h1>Our Programming Courses Are World Class</h1>
-			<h2>Coming Soon!</h2>
-			<hr>
+		<section id="productsCollection">
+			<article>
+				<h1>Learn <b id="typeAnime">Full-Stack Engineering</b> with<br>24/7 Asyncronus Support from Professionals</h1>
+				<p>Our Students are our #1 Priority. Your Professional Success depends on your Portfolio and Reputation. During your Training you will build Deep and Meaningful Projects for Your Portfolio which can lead to your own Startups. You will learn how to build your Reputation as a Professional via Personal Guidance on building yourself and your personal brand.</p>
+				<nav>
+					<button class="butt color-button" onclick="window.open('https://forms.gle/jb9kFSUnm1bnzNwL6')">Join Now</button>
+					<button class="butt outline-button" onclick="window.open('https://www.youtube.com/channel/UCleBSFSpanTiQgP8IYMEb0g')">Online</button>
+				</nav>
+			</article>
+			<nav class="cards" id="products">
+				<div class="card">
+					<div class="title">
+						<img class="icon" src="assets/computer-1211.svg"/>
+						<div class="course">
+							<h1>Web Development</h1>
+							<hr>
+							<h2>Basic Course</h2>
+						</div>
+					</div>
+					<p>In this program you will go through <b>6 months</b> of <b>fast-paced training</b>. You will learn <b>Computer Programming</b> from basics to advanced. You will develop 2 <b>amazing projects</b> for your <b>Portfolio</b> that will help you get a great job!</p>
+					<hr>
+					<b>Outline</b>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>Website Design</span></div>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>Computer Programming</span></div>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>Freelance Work</span></div>
+					<button class="color-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSehPOOW56z5YxSNSFGwuWF8UkrXkChgLIJc59_Ate9YPXFF9A/viewform?usp=pp_url&entry.2092238618=Student&entry.479301265=Date-of-Birth&entry.1454137112=Your+Email+or+Phone+Number&entry.1753222212=Web-Development&entry.588393791=Your+Country&entry.2109138769=One-Time+fee+(50%25+discount)')">Join Now</button>
+				</div>
+				<div class="card">
+					<div class="title">
+						<img class="icon" src="assets/smartphone-1210.svg"/>
+						<div class="course">
+							<h1>Front-End Engineering</h1>
+							<hr>
+							<h2>Intensive Course</h2>
+						</div>
+					</div>
+					<p>In this program you will go through <b>12 months</b> of very <b>intensive training</b>. You will learn <b>Computer Programming</b> and <b>Web App development</b> from basics to advanced. You will develop 4 <b>amazing projects</b> for your <b>Portfolio</b>.</p>
+					<hr>
+					<b>Outline</b>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>Website Development</span></div>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>Software Engineering</span></div>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>Graphic Design & SEO</span></div>
+					<button class="color-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSehPOOW56z5YxSNSFGwuWF8UkrXkChgLIJc59_Ate9YPXFF9A/viewform?usp=pp_url&entry.2092238618=Student&entry.479301265=Date-of-Birth&entry.1454137112=Your+Email+or+Phone+Number&entry.1753222212=Front-End+Engineering&entry.588393791=Your+Country&entry.2109138769=One-Time+fee+(50%25+discount)')">Join Now</button>
+				</div>
+				<div class="card">
+					<div class="title">
+						<img class="icon" src="assets/cryptocurrency-cloud-9954.svg"/>
+						<div class="course">
+							<h1>Back-End Engineering</h1>
+							<hr>
+							<h2>Intensive Course</h2>
+						</div>
+					</div>
+					<p>In this program you will go through <b>12 months</b> of very <b>intensive training</b>. You will learn <b>Software Engineering</b> and <b>Architecture</b> from basics to advanced. You will develop 4 <b>open-source back-end projects</b> for your <b>Portfolio</b>.</p>
+					<hr>
+					<b>Outline</b>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>Server Architecture</span></div>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>Cyber Security</span></div>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>IoT & Web 3.0</span></div>
+					<button class="color-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSehPOOW56z5YxSNSFGwuWF8UkrXkChgLIJc59_Ate9YPXFF9A/viewform?usp=pp_url&entry.2092238618=Student&entry.479301265=Date-of-Birth&entry.1454137112=Your+Email+or+Phone+Number&entry.1753222212=Back-End+Engineering&entry.588393791=Your+Country&entry.2109138769=One-Time+fee+(50%25+discount)')">Join Now</button>
+				</div>
+				<div class="card">
+					<div class="title">
+						<img class="icon" src="assets/laptop-12582.svg"/>
+						<div class="course">
+							<h1>Basic Computer Training</h1>
+							<hr>
+							<h2>Basic Course</h2>
+						</div>
+					</div>
+					<p>In this program you will go through <b>6 months</b> of very <b>basic training</b>. You will learn <b>MS Office</b> and <b>Social Media</b> from the basics. You will recieve assignment based training and regular guidance in using <b>MS Word</b>, <b>MS Excel</b>, <b>MS Power Point</b>, <b>Youtube for Creators</b>, and <b>Social Media for Creators</b>.</p>
+					<hr>
+					<b>Outline</b>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>MS Office</span></div>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>How to solve basic Computer Problems</span></div>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>How to make Money Online</span></div>
+					<button class="color-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSehPOOW56z5YxSNSFGwuWF8UkrXkChgLIJc59_Ate9YPXFF9A/viewform?usp=pp_url&entry.2092238618=Student&entry.479301265=Date-of-Birth&entry.1454137112=Your+Email+or+Phone+Number&entry.1753222212=Basic+Computer+Training&entry.588393791=Your+Country&entry.2109138769=One-Time+fee+(50%25+discount)')">Join Now</button>
+				</div>
+				<div class="card">
+					<div class="title">
+						<img class="icon" src="assets/laptop-statistics-12584.svg"/>
+						<div class="course">
+							<h1>Business Management & Analytics</h1>
+							<hr>
+							<h2>Basic Course</h2>
+						</div>
+					</div>
+					<p>In this program you will go through <b>12 months</b> of <b>intensive training</b>. You will learn <b>Business Management</b>, <b>Business Development</b>, <b>Business Analytics</b>, and <b>E-Commerce</b> from basics to advanced. You will focus on developing your own <b>business</b> and making <b>Money</b>.</p>
+					<hr>
+					<b>Outline</b>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>Startup Adminstration</span></div>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>Spreadsheets & Statistics</span></div>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>Business Analytics</span></div>
+					<button class="color-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSehPOOW56z5YxSNSFGwuWF8UkrXkChgLIJc59_Ate9YPXFF9A/viewform?usp=pp_url&entry.2092238618=Student&entry.479301265=Date-of-Birth&entry.1454137112=Your+Email+or+Phone+Number&entry.1753222212=Business+Analytics&entry.588393791=Your+Country&entry.2109138769=One-Time+fee+(50%25+discount)')">Join Now</button>
+				</div>
+				<div class="card">
+					<div class="title">
+						<img class="icon" src="assets/loud-speaker-1219.svg"/>
+						<div class="course">
+							<h1>Digital Marketing</h1>
+							<hr>
+							<h2>Intensive Course</h2>
+						</div>
+					</div>
+					<p>In this program you will go through <b>12 months</b> of <b>intensive training</b>. You will learn <b>Digital Marketing</b>, <b>Social-Media Marketing</b>, <b>Graphic Desing</b>, and <b>SEO</b> from basics to advanced. You will focus on developing your own <b>Portfolio</b>, <b>Followers</b>, and making <b>Money</b>.</p>
+					<hr>
+					<b>Outline</b>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>Social-Media Marketing</span></div>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>Campaigns & Ad Analytics</span></div>
+					<div class="outline-item"><img src="assets/check-circle-alt.svg"/><span>Graphic Design & SEO</span></div>
+					<button class="color-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSehPOOW56z5YxSNSFGwuWF8UkrXkChgLIJc59_Ate9YPXFF9A/viewform?usp=pp_url&entry.2092238618=Student&entry.479301265=Date-of-Birth&entry.1454137112=Your+Email+or+Phone+Number&entry.1753222212=Digital+Marketing&entry.588393791=Your+Country&entry.2109138769=One-Time+fee+(50%25+discount)')">Join Now</button>
+				</div>
+			</nav>
 		</section>
-		<section>
-			<hr>
-			<h1>We have a wide collection of Fine Arts Courses</h1>
-			<h2>Coming Soon!</h2>
-			<hr>
-		</section>
-		<section>
-			<hr>
-			<h1>We have English Courses for Everybody</h1>
-			<h2>Coming Soon!</h2>
-			<hr>
-		</section>
-		<section>
-			<hr>
-			<h1>Learn Business and Marketing with Us!</h1>
-			<h2>Coming Soon!</h2>
-			<hr>
-		</section>
-		<section>
-			<hr>
-			<h1>Student Gallery</h1>
-			<h2>Coming Soon!</h2>
-			<hr>
-		</section>
-		<section>
-			<hr>
-			<h1>Online Classes</h1>
-			<h2>Coming Soon!</h2>
-			<hr>
-		</section>
-		<section>
-			<hr>
-			<h1>Contact Information</h1>
-			<hr>
-		</section>
-		<section>
-			<hr>
-			<h1>Franchise with Us!</h1>
-			<h2>Coming Soon!</h2>
-			<hr>
-		</section>
-		<section>
-			<hr>
-			<h1>Checkout our Flyers</h1>
-			<ul class="gallery">
-				<li>
-					<img src="assets/posters/NIT Computer Programming Courses.png" alt="programmingCoursesFlyer"/>
-					<div class="overlay"><span>Programming Courses</span></div>
-				</li>
-				<li>
-					<img src="assets/posters/NIT English Language Course.png" alt="englishCoursesFlyer"/>
-					<div class="overlay"><span>English Courses</span></div>
-				</li>
-			</ul>
+		<section id="contactUs" class="contactUs-light-bg">
+			<h1>Contact Us</h1>
+			<div><img src="assets/whatsapp.svg"/><span>+92-3322-6-55-937</span></div>
+			<div><img src="assets/mail-bulk.svg"/><span><b>Noor</b>Institute<b>Of</b>Technology@gmail.com</span></div>
 		</section>
 	</main>
 	<footer>
-		<p>&copy; 2022 S M Mohtashim Ahmed</p>
-		<section>Created by Ray & A Group Solutions<br>
-		</section>
+		<p>Whatsapp: +92-3322-6-55-937<p>
+		<p>E-mail: NoorInstituteOfTechnology@gmail.com</p>
+		<hr>
+		<p>&copy; S M Mohtashim Ahmed 2022</p>
+		<p><b>Policy:</b> Students must maintain a professional and calm manner in all dealings with the institute and its affiliates. A failure to do so will result in immediate suspension and/or termination.</p>
+		<p><b>Disclaimer:</b> Noor Institute Of Technology and Persons affiliated with it are not liable for any damages. We do not take any responsibility for any damages or losses. The courses and training are provided as is without any warranty or assurance.</p>
 	</footer>
-	<script src="scripts/main.js" defer></script>
 </body>
 </html>
