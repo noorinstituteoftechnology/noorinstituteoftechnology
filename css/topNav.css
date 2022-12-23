@@ -8,7 +8,7 @@
 	display:flex;
 	flex-flow:row nowrap;
 	justify-content:space-around;
-	padding:15px var(--universal-padding);
+	padding:15px 0px;
 	transition:filter 2s;
 }
 

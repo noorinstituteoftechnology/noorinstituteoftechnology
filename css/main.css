@@ -4,7 +4,7 @@ main {
 	background-color:var(--main-color);
 	transition:background-color 2s;
 	margin:0px;
-	padding:0px var(--universal-padding);
+	padding:0px;
 	display:flex;
 	flex-flow:column nowrap;
 	justify-content:center;
