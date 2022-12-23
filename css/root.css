@@ -15,6 +15,7 @@
 	--header-text-color:#494949;
 	--dark-mode-bg:#191919;
 	--light-mode-bg:white;
+	--universal-padding:100px;
 }
 
 body {
