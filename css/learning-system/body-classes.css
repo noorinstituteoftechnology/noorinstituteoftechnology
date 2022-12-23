@@ -1,0 +1,23 @@
+.body > p {
+	text-indent:25px;
+}
+
+.body > img {
+	margin:10px;
+}
+
+.body > .mid {
+	max-width:45%;
+}
+
+.body > .small {
+	max-width:20%;
+}
+
+.body > .right {
+	float:right;
+}
+
+.body > .left {
+	float:left;
+}

@@ -1,0 +1,66 @@
+main {
+	min-height:80vh;
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:center;
+	align-items:stretch;
+	margin-top:0px;
+}
+
+main > section {
+	flex:1;
+	max-height:80vh;
+	overflow:scroll;
+	border:1px solid #dfdfdf;
+}
+
+#codeBox {
+	display:flex;
+	flex-flow:column nowrap;
+	align-items:stretch;
+	justify-content:flex-start;
+}
+
+#codeBox > section {
+	flex:1;
+	border:1px inset #dfdfdf;
+	overflow:scroll;
+}
+
+.code-editor {
+	font-family:monospace;
+	font-size:12pt;
+}
+
+.head {
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:space-between;
+	align-items:center;
+	padding:10px;
+}
+.body {
+	min-height:100%;
+	padding:20px;
+}
+
+.head > * {
+	filter:invert(20%);
+	font-weight:bold;
+}
+
+.head > img {
+	width:25px;
+}
+
+.lesson-item {
+	border:1px solid #dfdfdf;
+	padding:10px;
+	font-weight:bold;
+}
+
+.lesson-item:hover {
+	filter:invert(50%);
+	cursor:pointer;
+}
+
