@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>NoorTech Student Portal| Noor Institute of Technology</title>
+	<!-- mind the order of stylesheets -->
+	<link rel="stylesheet" href="../css/root.css">
+	<link rel="stylesheet" href="../css/topNav.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/darkMode.css">
+	<link rel="stylesheet" href="../css/learning-system/main.css">
+	<link rel="stylesheet" href="../css/learning-system/body-classes.css">
+	<link rel="stylesheet" href="../css/buttons.css">
+	<link rel="stylesheet" href="../css/cards.css">
+	<link rel="stylesheet" href="../css/dropdown.css">
+	<link rel="stylesheet" href="../css/mediaQueries.css">
+	<script src="../index.js"></script>
+</head>
+<body>
+	<nav id="topNav">
+		<div class="left">
+			<span id="darkMode" onclick="toggle('#darkMode', '../assets/v2/toggle-on.svg', '../assets/v2/toggle-off.svg');">
+				<img src="../assets/v2/toggle-off.svg"/>
+				<span>Dark Mode</span>
+			</span>
+			<span>
+				<img src="../assets/v2/user-circle.svg"/>
+				<span onclick="window.location=window.location.pathname+'#contactUs'">Contact Us</span>
+			</span>
+			<span>
+				<img class="big" src="../assets/v2/online-education-7546.svg"/>
+				<span>Student Corner</span>
+			</span>
+		</div>
+	</nav>
+	<header>
+		<div class="left">
+			<span id="headerStudentCorner">
+				<img class="big" src="../assets/v2/online-education-7546.svg"/>
+				<span>Student Corner</span>
+			</span>
+			<span id="webLogo">
+				<img id="logo" src="../logo.svg"/>
+			</span>
+			<span id="headerCourses">
+				<span onclick="window.open('https://noorinstituteoftechnology.github.io#products');">Courses</span>
+			</span>
+			<span id="headerResources">
+				<span>Resources</span>
+				<img src="../assets/v2/chevron-down.svg"/>
+			</span>
+			<nav id="resourcesDropdown" class="dropdown">
+				<span class="point"></span>
+				<b>External Resources</b>
+				<a href="https://www.youtube.com/channel/UCleBSFSpanTiQgP8IYMEb0g" target="_blank">NoorTech YouTube Channel</a>
+				<a href="https://html5sec.org/" target="_blank">HTML5 Security</a>
+				<hr>
+				<b>Comming Soon</b>
+				<a href="#">Institute News</a>
+				<a href="#">Our Instructors</a>
+				<a href="#">Merit Based Finincial Asistance</a>
+			</nav>
+		</div>
+		<div class="right">
+			<button class="outline-button" onclick="downloadFile();">Download</button>
+			<button class="color-button" onclick="viewFile();">View</button>
+			<button class="color-button" style="background-color:#191919;" onclick="saveFile();">Save</button>
+			<button class="color-button" style="background-color:#5959ff;" onclick="toggleEditorView();">Editor</button>
+		</div>
+	</header>
+	<main>
+		<section id="lessonBox">
+			<div class="head">
+				<div class="title" id="lesssonBoxTitle">Lesson</div>
+				<!--<img src="../assets/apps/bars.svg"/>-->
+			</div>
+			<div class="body decrypt" id="lessonBoxBody">
+				<h1>Under Development</h1>
+				<p>More features coming soon</p>
+			</div>
+		</section>
+		<section id="codeBox">
+			<section id="mycode" class="code-editor" contenteditable=true>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;&lt;/title&gt;
+	&lt;style&gt;&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+&lt;/body&gt;
+&lt;script&gt;&lt;/script&gt;
+&lt;/html&gt;
+			</section>
+		</section>
+	</main>
+	<footer>
+		<p>Whatsapp: +92-3322-6-55-937<p>
+		<p>E-mail: NoorInstituteOfTechnology@gmail.com</p>
+		<hr>
+		<p>&copy; S M Mohtashim Ahmed 2022</p>
+		<p><b>Policy:</b> Students must maintain a professional and calm manner in all dealings with the institute and its affiliates. A failure to do so will result in immediate suspension and/or termination.</p>
+		<p><b>Disclaimer:</b> Noor Institute Of Technology and Persons affiliated with it are not liable for any damages. We do not take any responsibility for any damages or losses. The courses and training are provided as is without any warranty or assurance.</p>
+	</footer>
+	<script src="../scripts/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+	    var editor = ace.edit("mycode");
+	    //ace.config.set('basePath', "https://unpkg.com/ace-builds@1.4.6/src-noconflict")
+	    //editor.setTheme("ace/monokai");
+	    //editor.session.setMode("ace/javascript");
+	</script>
+	<script>
+		window.onload = () => {
+			const code = editor.getValue();
+			editor.setValue(localStorage.getItem("code") || code, -1);
+		}
+		function toggleEditorView() {
+			const codeBox = document.getElementById("codeBox");
+			const lessonBox = document.getElementById("lessonBox");
+			codeBox.style.display = codeBox.style.display !== "none" ? "none" : "flex"; 
+			lessonBox.style.flex = codeBox.style.display === "none" ? "2" : "1"; 
+		}
+		function downloadFile() {
+		  	const element = document.createElement('a');
+			const code = editor.getValue();
+			element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(code));
+		  	element.setAttribute('download', 'myWebpade.html');
+		  	element.click();
+		}
+		function viewFile() {
+			const code = editor.getValue();
+			const tab = window.open();
+			tab.document.write(code);
+		}
+		function saveFile() {
+			const code = editor.getValue();
+			localStorage.setItem("code", code);
+		}
+	</script>
+</body>
+</html>
