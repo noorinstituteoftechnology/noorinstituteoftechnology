@@ -34,7 +34,6 @@ footer {
 }
 
 footer > hr {
-	margin:0px;
 	width:80%;
 }
 
@@ -43,6 +42,15 @@ footer > p {
 	font-family:sans serif;
 }
 
+footer > *:first-child {
+	margin-top:20px;
+}
+
+footer > *:last-child {
+	margin-bottom:20px;
+}
+
 footer > * {
-	margin:20px 100px;
+	margin-right:100px;
+	margin-left:100px;
 }
