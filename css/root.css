@@ -31,6 +31,7 @@ footer {
 	min-height:50px;
 	background-color:var(--purple);
 	color:white;
+	padding:20px 0px;
 }
 
 footer > hr {
@@ -40,14 +41,6 @@ footer > hr {
 footer > p {
 	width: 60%;
 	font-family:sans serif;
-}
-
-footer > *:first-child {
-	margin-top:20px;
-}
-
-footer > *:last-child {
-	margin-bottom:20px;
 }
 
 footer > * {
