@@ -15,16 +15,28 @@ main > section {
 }
 
 #codeBox {
+	flex:2;
 	display:flex;
 	flex-flow:column nowrap;
 	align-items:stretch;
 	justify-content:flex-start;
 }
 
-#codeBox > section {
+#codeBox > .window {
 	flex:1;
 	border:1px inset #dfdfdf;
 	overflow:scroll;
+}
+
+#codeBox > .tool-bar {
+	padding:5px 10px;
+	font-size:12pt;
+	color:#dfdfdf;
+	background-color:#191919;
+}
+
+#codeBox > .tool-bar > .title {
+	
 }
 
 .code-editor {
